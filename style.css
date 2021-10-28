@@ -37,6 +37,7 @@ svg {
 .header .logo {
 	font-variant: small-caps;
 	font-size: 1.5rem;
+	animation: zoom-in-out 1s infinite linear alternate;
 }
 
 .navigation ul {
@@ -203,5 +204,11 @@ svg {
 @keyframes turn {
 	100% {
 		transform: rotate(15deg);
+	}
+}
+
+@keyframes zoom-in-out {
+	100% {
+		transform: scale(1.1);
 	}
 }
