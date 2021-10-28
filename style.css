@@ -264,13 +264,13 @@ svg {
 
 @keyframes make-shadow {
 	0% {
-		box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
+		box-shadow: 20px 5px 10px rgba(0, 0, 0, 0.4);
 	}
 
 	50% {
 		box-shadow: 0px 30px 0px rgba(0, 0, 0, 0.4);
 	}
 	100% {
-		box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.4);
+		box-shadow: -20px 5px 10px rgba(0, 0, 0, 0.4);
 	}
 }
