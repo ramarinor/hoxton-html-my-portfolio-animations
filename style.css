@@ -96,7 +96,8 @@ svg {
 	padding: 1rem;
 	font-size: 1.5rem;
 	text-align: center;
-	animation: glide 1s infinite linear alternate;
+	transform: translate(0, -0.5rem);
+	animation: glide 0.5s infinite linear alternate;
 }
 
 .projects {
