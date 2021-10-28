@@ -199,6 +199,7 @@ svg {
 	padding: 2rem;
 	background-color: rgb(149, 215, 111);
 	display: grid;
+	place-items: center;
 }
 
 .animation .animation-title {
@@ -208,7 +209,9 @@ svg {
 
 .animation .animation-container {
 	/* outline: 1px solid black; */
-	height: 80vh;
+
+	width: 500px;
+	height: 350px;
 	display: grid;
 	align-content: end;
 }
@@ -221,15 +224,15 @@ svg {
 	animation: goaround 4s linear infinite alternate;
 }
 .sun-container .sun {
-	height: 10vh;
-	width: 10vh;
+	height: 100px;
+	width: 100px;
 	background-color: yellow;
 	border-radius: 50%;
 }
 
 .animation-container .object {
-	height: 10vh;
-	width: 10vh;
+	height: 100px;
+	width: 100px;
 	background-color: darkblue;
 	justify-self: center;
 	animation: make-shadow 4s linear infinite alternate;
@@ -261,9 +264,13 @@ svg {
 
 @keyframes make-shadow {
 	0% {
-		box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.4);
+		box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
+	}
+
+	50% {
+		box-shadow: 0px 30px 0px rgba(0, 0, 0, 0.4);
 	}
 	100% {
-		box-shadow: -20px 20px 0 rgba(0, 0, 0, 0.4);
+		box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.4);
 	}
 }
