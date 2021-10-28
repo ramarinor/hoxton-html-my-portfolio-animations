@@ -195,6 +195,46 @@ svg {
 	box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
+.animation {
+	padding: 2rem;
+	background-color: rgb(149, 215, 111);
+	display: grid;
+}
+
+.animation .animation-title {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.animation .animation-container {
+	/* outline: 1px solid black; */
+	height: 80vh;
+	display: grid;
+	align-content: end;
+}
+
+.sun-container {
+	/* outline: 1px solid black; */
+	width: 50%;
+	transform: translate(0, 10vh);
+	transform-origin: bottom right;
+	animation: goaround 4s linear infinite alternate;
+}
+.sun-container .sun {
+	height: 10vh;
+	width: 10vh;
+	background-color: yellow;
+	border-radius: 50%;
+}
+
+.animation-container .object {
+	height: 10vh;
+	width: 10vh;
+	background-color: darkblue;
+	justify-self: center;
+	animation: make-shadow 4s linear infinite alternate;
+}
+
 @keyframes glide {
 	100% {
 		transform: translate(0rem, 1rem);
@@ -210,5 +250,20 @@ svg {
 @keyframes zoom-in-out {
 	100% {
 		transform: scale(1.1);
+	}
+}
+
+@keyframes goaround {
+	100% {
+		transform: rotate(-180deg);
+	}
+}
+
+@keyframes make-shadow {
+	0% {
+		box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.4);
+	}
+	100% {
+		box-shadow: -20px 20px 0 rgba(0, 0, 0, 0.4);
 	}
 }
