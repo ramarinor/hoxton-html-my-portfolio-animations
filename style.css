@@ -48,10 +48,18 @@ svg {
 	color: #ece5e0;
 	font-size: 1.1rem;
 	text-decoration: none;
+	transition: 0.5s;
 }
 
 .navigation ul li a:hover {
 	text-decoration: underline;
+	font-size: 1.2rem;
+}
+
+.navigation ul li a:active {
+	background-color: #ece5e0;
+	color: #35382e;
+	text-decoration: none;
 }
 
 .main {
